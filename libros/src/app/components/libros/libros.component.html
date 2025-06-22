@@ -1,0 +1,12 @@
+<p>libros works!</p>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div *ngFor="let item of libros" class="col">
+        <div class="card shadow border-primary h-100">
+            <div class="card-body">
+                <h3 class="card-title text-center">{{item.Title}}</h3>
+                <h4>{{item.Year}}</h4>
+                <p class="card-text">{{item.Notes}}</p>
+            </div>
+        </div>
+    </div>
+</div>
